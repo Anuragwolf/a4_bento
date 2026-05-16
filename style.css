@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 21%;
+    grid-template-rows: 10% 20% 20% 10% 20%;
+    grid-template-areas: 
+   "topleft1 topleft2 center topright"
+   "topleft1 topleft2 center middleright"
+   "bottomleft middleleft center  middleright"
+   "bottomleft bottomleft2 bottomright bottomright"
+   "bottomleft endleft1 bottomright bottomright"
+   ;
+   
+   gap: 1rem;
+
+}
+
+.topleft1 {
+background-color: rgb(23, 155, 237);
+position: relative;
+grid-area: topleft1;
+display: flex;
+align-items: center;
+background-color: transparent;
+justify-content: center;
+}
+
+.topleft1 img {
+height: 100%;
+width: 100%;
+padding: 10px;
+border-radius: 40px;
+overflow:hidden
+}
+.topleft2 {
+background-color:rgb(30, 28, 28);
+grid-area: topleft2;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 30px;
+
+}
+
+.topleft2 img {
+    height: 13rem;
+}
+.center {
+background-color: rgb(30, 28, 28);
+grid-area: center;
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+border-radius: 30px;
+
+
+}
+.center nav {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.center a{
+    text-decoration: none;
+    color: white;
+    padding:0px 0px 20px 10px;
+    font-size: 20px;
+}
+.center hr {
+    color: rgba(49, 5, 5, 0.852);
+    
+    border: 1px solid rgb(41, 37, 37);
+     width: 200px;
+     
+      : 20px 0px 40px 0px;
+}
+.topright {
+background-color: rgb(94, 13, 192);
+grid-area: topright;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 30px;
+
+gap: 50px;
+font-size: 12px;
+
+}
+.topright div {
+    display: flex;
+    align-items: center;
+
+    gap:30;
+}
+.topright i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.bottomleft {
+background-color: rgb(30, 28, 28);
+position: relative;
+grid-area: bottomleft;
+display: flex;
+
+border: 1px solid rgb(174, 255, 0);
+flex-direction: column;
+border-radius: 30px;
+padding: 20px;
+gap:13%;
+
+}
+
+.bottomleft .content {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+
+
+.bottomleft .content h1 {
+    font-size:55px;
+  
+}
+ .bottomleft .content span {
+   font-size: 15px;
+   letter-spacing: 2px;
+   color: rgb(166, 97, 192);
+}
+.bottomleft .bitcoin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border-top: 1px solid rgb(102, 97, 97);
+  
+  
+    font-size: 20px;
+
+}
+.bitcoin i {
+    font-size: 50px;
+    color: rgb(166, 205, 108);
+    border-radius: 20px;
+   
+
+}
+
+.barcode {
+   align-self: center;
+    width: 240px;
+}
+.middleleft {
+background-color: rgb(30, 28, 28);
+grid-area: middleleft;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 30px;
+padding: 10px;
+}
+
+.middleleft .location {
+    display: flex;
+
+    gap:10px;
+    padding: 20px;
+    font-size: 10px;
+    align-self: flex-start;
+    
+}
+.location i {
+    font-size: 25px;
+    background-color: rgb(166, 205, 108);
+    
+    padding: 1px;
+    
+    border-radius: 50%;
+
+}
+.middleleft .info {
+   
+  
+    padding: 0px 20px 10px 20px;
+    font-size: 15px;
+    align-self: flex-start;
+    font-weight: 200;
+    
+}
+.middleleft .info span {
+ color: rgb(102, 97, 97);
+ font-size: 10px;
+ align-self: flex-start;
+ justify-self: center;
+ margin: 40px 0px;
+}
+
+.middleright {
+    background-color: rebeccapurple;
+    grid-area: middleright;
+    border-radius: 30px;
+
+
+}
+
+.middleright img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.bottomleft2{
+
+    grid-area: bottomleft2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(30, 28, 28);
+    border-radius: 30px;
+}
+
+.bottomleft2 .ribbon {
+    height: 70px;
+
+}
+.bottomright{
+    background-color: white;
+    grid-area:bottomright;
+    display: flex;
+    color: black;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-radius: 30px;
+    
+}
+.brleft {
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+   
+}
+.brright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.brright h1 {
+    font-size: 5rem;
+}
+.brright img {
+    height: 2rem;
+}
+.brright button {
+    border: none;
+    background-color: rgb(166, 97, 192);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
+
+.endleft1{
+    background-color: rgb(170, 252, 89);
+    position: relative;
+    display: flex;
+    grid-area: endleft1;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 30px;
+}
+
+.endleft1 .ri-qr-code-line {
+    font-size: 6rem;
+}
+.endleft1 h6 {
+    font-size: 6rem;
+}
+.endleft1 p {
+    font-size: 1rem;
+}
+
+.ri-arrow-right-up-line  {
+    align-self: flex-start;
+    font-size: 1rem;
+    align-self: center;
+    position: absolute;
+    right: 1%;
+    top: 30%;
+}
+
