@@ -72,7 +72,7 @@ justify-content: center;
 flex-direction: column;
 border-radius: 30px;
 
-
+padding: 10px;
 }
 .center nav {
     display: flex;
@@ -92,7 +92,7 @@ border-radius: 30px;
     border: 1px solid rgb(41, 37, 37);
      width: 200px;
      
-      : 20px 0px 40px 0px;
+      margin: 20px 0px 40px 0px;
 }
 .topright {
 background-color: rgb(94, 13, 192);
