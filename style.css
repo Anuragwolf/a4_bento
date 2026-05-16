@@ -82,13 +82,21 @@ padding: 10px;
 }
 .center a{
     text-decoration: none; display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    
     color: white;
     gap:0.5rem;
     padding:5px 5px 5px 5px;
     font-size: 20px;
 }
+
+.circle {
+    display: none;
+    background-color: rgb(166, 97, 192);
+    width: 10px;
+    height: 10px;
+}
+
 .center a:hover {
     background-color: rgba(255, 255, 255, 0.123);
     border: none;
@@ -98,6 +106,9 @@ padding: 10px;
 a:hover i {
     color: rgb(170, 252, 89);
 }
+a:hover .circle {
+    display: flex;
+}
 .center hr {
     color: rgba(49, 5, 5, 0.852);
     
@@ -106,6 +117,7 @@ a:hover i {
      
       margin: 20px 0px 40px 0px;
 }
+
 .topright {
 background-color: rgb(94, 13, 192);
 grid-area: topright;
